@@ -1,0 +1,24 @@
+{
+  "name": "alsaegh-center-website",
+  "version": "1.0.0",
+  "description": "Al-Saegh Specialty Center for Dialysis & Kidney Disease Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8080 -o",
+    "dev": "http-server -p 8080 -o -c-1",
+    "serve": "python -m http.server 8080",
+    "deploy:cloudflare": "wrangler pages deploy . --project-name=alsaegh-center"
+  },
+  "keywords": [
+    "medical",
+    "dialysis",
+    "kidney",
+    "healthcare"
+  ],
+  "author": "Al-Saegh Center",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
+
